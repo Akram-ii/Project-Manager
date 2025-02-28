@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+
+    android:background="@drawable/back2"
+    android:gravity="bottom"
+    >
+<ImageView
+    android:layout_width="75dp"
+    android:layout_height="75dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginRight="5dp"
+    android:src="@drawable/logobig"
+    android:layout_alignParentRight="true"
+   />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="17dp"
+        android:id="@+id/drawerEmail"
+
+        android:layout_marginLeft="95dp"
+        android:textColor="@color/secondary"
+
+
+        />
+    <ImageView
+        android:scaleType="centerCrop"
+        android:src="@drawable/roundpfp"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/drawerpfp"
+        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/drawerUsername"
+        android:layout_marginLeft="17dp"/>
+    <TextView
+       android:layout_alignStart="@+id/drawerEmail"
+        android:id="@+id/drawerUsername"
+        android:layout_width="wrap_content"
+        android:layout_above="@+id/drawerEmail"
+        android:layout_height="wrap_content"
+
+        android:text="Loading..."
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+</RelativeLayout>

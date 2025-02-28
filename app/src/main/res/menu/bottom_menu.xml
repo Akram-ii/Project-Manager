@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home"
+        android:icon="@drawable/home2"
+        android:iconTint="@color/main"
+        />
+    <item
+        android:iconTint="@color/main"
+        android:id="@+id/nav_projects"
+        android:title="Projects"
+        android:icon="@drawable/projects"/>
+    <item
+        android:iconTint="@color/main"
+        android:id="@+id/nav_tasks"
+        android:title="Tasks"
+        android:icon="@drawable/tasks"/>
+    <item
+        android:iconTint="@color/main"
+        android:id="@+id/nav_chats"
+        android:title="Chats"
+        android:icon="@drawable/chats_icon"/>
+    <item
+        android:id="@+id/nav_account"
+        android:iconTint="@color/main"
+        android:title="Profile"
+        android:icon="@drawable/account"/>
+
+</menu>

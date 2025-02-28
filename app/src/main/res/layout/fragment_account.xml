@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/back2"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.AccountFragment">
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="250dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Press below to change profile picture"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/secondary"
+        />
+
+     <ImageView
+         android:layout_width="150dp"
+         android:layout_height="150dp"
+         android:id="@+id/pfpImageView"
+         android:layout_centerInParent="true"
+         android:background="@drawable/roundpfp"
+         android:scaleType="centerCrop"
+         android:src="@drawable/pfp"
+         />
+     <TextView
+         android:id="@+id/welcomeTextView"
+         android:layout_centerHorizontal="true"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/pfpImageView"
+         android:textColor="@color/white"
+         android:textSize="30dp"
+         android:hint="Loading..."
+         android:textColorHint="@color/secondary"
+         android:layout_marginTop="5dp"/>
+ </RelativeLayout>
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:padding="15dp"
+    android:backgroundTint="@color/offwhite"
+    android:background="@drawable/accountbox">
+<ImageView
+    android:layout_width="25dp"
+    android:layout_height="25dp"
+    android:id="@+id/icpfp"
+    android:background="@drawable/account"/>
+    <ImageButton
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/usernameEdit"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/edit"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/usernameTextView"
+        android:textColor="@color/black"
+        android:layout_alignStart="@id/icpfp"
+        android:hint="Loading..."
+        android:textColorHint="@color/secondary"
+        android:paddingLeft="50dp"
+        android:textSize="18sp"/>
+    <View
+        android:id="@+id/div1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/usernameTextView"
+        android:background="@color/darkGray"/>
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/icmail"
+        android:layout_below="@id/div1"
+        android:background="@drawable/mailblue"/>
+    <ImageButton
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/emailEdit"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/div1"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/edit"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailTextView"
+        android:textColorHint="@color/secondary"
+        android:textColor="@color/black"
+        android:layout_below="@id/div1"
+        android:layout_alignStart="@id/icmail"
+        android:hint="Loading..."
+        android:paddingLeft="50dp"
+        android:textSize="18sp"/>
+    <View
+        android:id="@+id/dive"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/emailTextView"
+        android:background="@color/darkGray"/>
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/icpass"
+        android:layout_below="@id/dive"
+        android:background="@drawable/pass"/>
+    <ImageButton
+        android:layout_marginTop="20dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/passwordEdit"
+        android:layout_below="@id/dive"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/edit"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordTextView"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:layout_below="@id/dive"
+        android:textColorHint="@color/secondary"
+        android:layout_alignStart="@id/icpass"
+        android:hint="Loading..."
+        android:paddingLeft="50dp"
+        android:textSize="18sp"/>
+<ProgressBar
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="?android:attr/progressBarStyleLarge"
+    android:layout_centerInParent="true"
+    android:elevation="10dp"
+    android:indeterminateTint="@color/main"
+    android:id="@+id/progressbar"
+    android:visibility="gone"
+    />
+
+</RelativeLayout>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:textAlignment="center"
+    android:textSize="20dp"
+    android:text="Loading..."
+    android:layout_marginTop="30dp"
+    android:textColor="@color/secondary"
+    android:id="@+id/dateTextView"
+    />
+    <Button
+        android:layout_width="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:id="@+id/deleteButton"
+        android:padding="10dp"
+        android:text="Delete account"
+
+        android:backgroundTint="@color/red"
+        />
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    tools:context=".fragments.SearchFragment">
+
+    <EditText
+        android:imeOptions="actionDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="80dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="18sp"
+        android:maxLines="1"
+
+        android:inputType="textCapSentences"
+        android:textColor="@color/white"
+        android:hint="Username"
+        android:textColorHint="@color/secondary"
+        android:id="@+id/user_EditText"
+        android:layout_marginTop="40dp"
+        />
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/search_icon"
+        android:id="@+id/search_icon"
+        android:layout_marginTop="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:background="?attr/selectableItemBackgroundBorderless"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:id="@+id/search_RecyclerView"
+        android:layout_marginHorizontal="15dp"/>
+</RelativeLayout>
