@@ -57,7 +57,7 @@ RelativeLayout addPerson;
                 transaction.commitAllowingStateLoss();
             }
         });
-
+int b;
         SetupRecyclerView();
         return rootView;
 
