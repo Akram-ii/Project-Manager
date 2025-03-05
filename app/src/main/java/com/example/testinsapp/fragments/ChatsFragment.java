@@ -49,6 +49,10 @@ RelativeLayout addPerson;
                 if (existingFragment != null) {
                     fragmentManager.beginTransaction().remove(existingFragment).commit();
                 }
+int a=45;
+                if(a==3){
+
+                }
 
                 FragmentTransaction transaction = fragmentManager.beginTransaction();
                 SearchFragment searchFragment = new SearchFragment();
