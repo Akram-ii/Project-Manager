@@ -61,7 +61,7 @@ int a=45;
                 transaction.commitAllowingStateLoss();
             }
         });
-
+int b;
         SetupRecyclerView();
         return rootView;
 
